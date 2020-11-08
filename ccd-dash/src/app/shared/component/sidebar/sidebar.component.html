@@ -1,0 +1,21 @@
+<!-- <mat-selection-list #shoes [multiple]="false">
+    <mat-list-option [matMenuTriggerFor]="menu" *ngFor="let shoe of typesOfShoes" [value]="shoe">
+        <mat-list-item routerLinkActive="list-item-active" routerLink="/posts">{{shoe}}</mat-list-item>
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item>Item 1</button>
+                <button mat-menu-item>Item 2</button>
+            </mat-menu>
+    </mat-list-option>
+  </mat-selection-list> -->
+<mat-nav-list>
+    <h2 matSubheader>DATA</h2>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/">dashboard</a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/posts">table</a>
+    
+    <mat-divider></mat-divider>
+
+    <h2 matSubheader>INFO</h2>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/">dashboard</a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/posts">table</a>
+
+</mat-nav-list>

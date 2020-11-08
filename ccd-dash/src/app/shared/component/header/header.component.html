@@ -1,0 +1,30 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <button mat-icon-button (click)="toggleSideBar()">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <span routerLinkActive="list-item-active" routerLink="/">Thidr Line</span>
+
+        <div fxFlex fxLayout="row" fxLayoutAlign="flex-end">
+            <ul fxLayout="row" fxLayoutGap="20px" style="list-style-type:none">
+                <li>
+                    <button mat-button [matMenuTriggerFor]="menu" aria-label="Example icon button with a home icon">
+                        <mat-icon>person_outline</mat-icon>
+                    </button>
+                    <mat-menu #menu="matMenu">
+                        <button mat-menu-item>Item 1</button>
+                        <button mat-menu-item>
+                            <mat-icon>exit_to_app</mat-icon>
+                            Logout
+                        </button>
+                      </mat-menu>
+                </li>
+                <li>
+                    <button mat-icon-button>
+                        <mat-icon>info</mat-icon>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </mat-toolbar-row>
+</mat-toolbar>
